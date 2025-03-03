@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lista de Compras</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+
+        <div class="add-item">
+            <h2>Adicionar Item</h2>
+            <div class="success-message" id="success-message">Item adicionado com sucesso!</div>
+
+            <div class="form-group">
+                <label for="item-name">Nome do Item:</label>
+                <input type="text" id="item-name" placeholder="Digite o nome do item">
+            </div>
+
+            <div class="form-group">
+                <label for="category">Categoria:</label>
+                <select id="category">
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Cereais">Cereais</option>
+                    <option value="Congelados">Congelados</option>
+                    <option value="Doces">Doces</option>
+                    <option value="Frutas">Frutas</option>
+                    <option value="Laticínios">Laticínios</option>
+                    <option value="Material de limpeza">Material de limpeza</option>
+                    <option value="Padaria">Padaria</option>
+                    <option value="Verduras">Verduras</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+
+            <button id="add-btn">Adicionar Item</button>
+            <button id="finish-btn" style="background-color: #e74c3c; margin-left: 10px;">Finalizar Lista</button>
+            <button id="remove-btn" class="secondary-btn">Remover Item</button>
+            <button id="clear-btn" class="clear-btn">Limpar lista</button>
+        </div>
+
+        <div class="item-list">
+            <h2>Minha Lista de Compras</h2>
+            <div id="shopping-list">
+                <div class="empty-list" id="empty-list">Sua lista de compras está vazia.</div>
+                <!-- Categorias serão inseridas aqui dinamicamente -->
+            </div>
+        </div>
+    </div>
+    <script src="atividade_5.js"></script>
+</body>
+
+</html>
