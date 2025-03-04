@@ -109,11 +109,12 @@ button:hover {
 /* Media Queries para Responsividade */
 @media screen and (max-width: 768px) {
     body {
+        width: 100%;
         padding: 10px;
     }
 
     .container {
-        padding: 20px;
+        padding: 10px;
         border-radius: 0;
         box-shadow: none;
     }
@@ -143,6 +144,9 @@ button:hover {
     button {
         padding: 10px 15px;
         font-size: 14px;
+        width: auto;
+        display: block;
+        margin: 5px auto;
     }
 
     .category {
@@ -169,11 +173,11 @@ button:hover {
     }
 
     .container {
-        padding: 15px;
+        padding: 5px;
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .add-item,
@@ -195,6 +199,8 @@ button:hover {
     button {
         padding: 8px 12px;
         font-size: 12px;
+        width: 100%;
+        font-size: 14px;
     }
 
     .category h3 {
